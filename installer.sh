@@ -20,7 +20,7 @@ echo -e "${c}Setting up environment of Team: $1"; $r
 # 3 seconds wait time to start the setup
 for i in `seq 3 -1 1` ; do echo -ne "$i\rThe setup will start in... " ; sleep 1 ; done
 echo -e "${c}Installing complete dependencies pack."; $r
-sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
+sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
 source ~/.nvm/nvm.sh
